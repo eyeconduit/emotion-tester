@@ -21,7 +21,7 @@ def upload_image():
     file = request.files['file']
 
     if file.filename == '':
-        flash('No image seleted for uploading')
+        flash('No image selected for uploading')
         return redirect(request.url)
 
     if file and allowed_file(file.filename):
@@ -29,7 +29,7 @@ def upload_image():
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
         # print("upload_image filename: " + filename)
         # flash(f'Image successfully uploaded and displayed below')
-        print(filename)
+        # print(filename)
         flash(emotion_detection(filename))
         return render_template('upload.html', filename=filename)
     else:
