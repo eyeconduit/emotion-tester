@@ -5,7 +5,6 @@ train.zip
 haarcascade_frontalface_default.xml
 references.txt
 /train
-/static/uploads
 /__pycache__
 *.py[cod]
 *$py.class

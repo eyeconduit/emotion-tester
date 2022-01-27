@@ -8,3 +8,5 @@ references.txt
 /__pycache__
 *.py[cod]
 *$py.class
+app.yaml
+appengine_config.py
