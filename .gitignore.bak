@@ -5,3 +5,4 @@ train.zip
 haarcascade_frontalface_default.xml
 references.txt
 /train
+/static/uploads
